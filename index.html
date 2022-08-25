@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        function check(x, y, z) {
+            if (x < y && y < z) {
+                return "strict mode";
+            }else if (z > y) {
+                return "soft mode";
+            }else {
+                return undefined;
+            }
+        }
+        console.log(check(10,15,31));
+        console.log(check(24,22,31));
+        console.log(check(50,21,15));
+    </script>
+</body>
+</html>
